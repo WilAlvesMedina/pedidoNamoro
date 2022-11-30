@@ -1,6 +1,7 @@
 @import '../abstract/variables';
 
 body{
+    background-color: $colorGray;
     width: 100%;
     height: 100vh;
     display: grid;
@@ -8,16 +9,20 @@ body{
 }
 
 section{
+    z-index: 2;
+
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     gap: 6.4rem;
     margin-inline: 1.6rem;
-    padding: 3.2rem;
+    padding: 6.4rem 3.2rem;
     height: 80vh;
     border-radius: .8rem;
     background-color: $colorBlack;
+
+    box-shadow: 0px 8px 24px #00000041;
 
     h1{
         font-size: 3.2rem;
@@ -29,15 +34,16 @@ section{
 
     div{
         display: grid;
-        gap: 6.4rem;
+        gap: 4.8rem;
         grid-template-columns: 1fr 1fr;
 
         button{
-            font-size: 1.6rem;
-            width: 12rem;
+            font-size: 1.8rem;
+            font-weight: 700;
+            width: 14rem;
             background-color: transparent;
             border-radius: 100px;
-            padding: 1rem;
+            padding: 1.2rem;
             cursor: pointer;
 
             color: $colorGreen;
