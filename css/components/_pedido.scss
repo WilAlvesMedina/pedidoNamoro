@@ -29,7 +29,7 @@ section{
 
     div{
         display: grid;
-        gap: 2rem;
+        gap: 6.4rem;
         grid-template-columns: 1fr 1fr;
 
         button{
@@ -40,14 +40,22 @@ section{
             padding: 1rem;
             cursor: pointer;
 
-            color: $colorWhite;
-            border: 2px solid $colorWhite;
+            color: $colorGreen;
+            border: 2px solid $colorGreen;
+
+            &:hover{
+                box-shadow: 0px 8px 24px #16a60080;
+            }
         }
 
         .no1, .no2, .no3, .no4, .no5{
             visibility: hidden;
             color: $colorRed;
             border: 2px solid $colorRed;
+
+            &:hover{
+                box-shadow: 0px 8px 24px #af111191;
+            }
         }
     }
 }

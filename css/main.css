@@ -42,7 +42,7 @@ section h1 {
 }
 section div {
   display: grid;
-  gap: 2rem;
+  gap: 6.4rem;
   grid-template-columns: 1fr 1fr;
 }
 section div button {
@@ -52,13 +52,19 @@ section div button {
   border-radius: 100px;
   padding: 1rem;
   cursor: pointer;
-  color: #DEDEDE;
-  border: 2px solid #DEDEDE;
+  color: #17A600;
+  border: 2px solid #17A600;
+}
+section div button:hover {
+  box-shadow: 0px 8px 24px rgba(22, 166, 0, 0.5019607843);
 }
 section div .no1, section div .no2, section div .no3, section div .no4, section div .no5 {
   visibility: hidden;
   color: #AF1111;
   border: 2px solid #AF1111;
+}
+section div .no1:hover, section div .no2:hover, section div .no3:hover, section div .no4:hover, section div .no5:hover {
+  box-shadow: 0px 8px 24px rgba(175, 17, 17, 0.568627451);
 }
 
 .show {
