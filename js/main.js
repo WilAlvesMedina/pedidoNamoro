@@ -45,5 +45,5 @@ const yes = document.querySelector(".yes");
 yes.addEventListener("click", aceita);
 
 function aceita(){
-    !alert("Talvez estejamos namorando, foi muito dificil!")
+    !alert("Parabéns!! Agora estamos namorando, foi muito dificil...")
 }
