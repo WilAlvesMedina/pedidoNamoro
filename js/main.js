@@ -38,3 +38,12 @@ function trocaNo5(){
     no05.classList.remove("show");
     no03.classList.add("show");
 }
+
+
+const yes = document.querySelector(".yes");
+
+yes.addEventListener("click", aceita);
+
+function aceita(){
+    !alert("Parabéns, Estamos Namorando!")
+}
