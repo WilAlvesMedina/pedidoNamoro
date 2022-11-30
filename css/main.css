@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+html {
+  font-size: 1.6rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6.4rem;
+  margin-inline: 1.6rem;
+  padding: 3.2rem;
+  height: 80vh;
+  border-radius: 0.8rem;
+  background-color: #1E1E1E;
+}
+section h1 {
+  font-size: 3.2rem;
+  color: #DEDEDE;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+section div {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+}
+section div button {
+  font-size: 1.6rem;
+  width: 12rem;
+  background-color: transparent;
+  border-radius: 100px;
+  padding: 1rem;
+  cursor: pointer;
+  color: #DEDEDE;
+  border: 2px solid #DEDEDE;
+}
+section div .no1, section div .no2, section div .no3, section div .no4, section div .no5 {
+  visibility: hidden;
+  color: #AF1111;
+  border: 2px solid #AF1111;
+}
+
+.show {
+  visibility: visible !important;
+}/*# sourceMappingURL=main.css.map */

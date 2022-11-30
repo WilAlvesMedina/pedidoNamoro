@@ -1,0 +1,57 @@
+@import '../abstract/variables';
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6.4rem;
+    margin-inline: 1.6rem;
+    padding: 3.2rem;
+    height: 80vh;
+    border-radius: .8rem;
+    background-color: $colorBlack;
+
+    h1{
+        font-size: 3.2rem;
+        color: $colorWhite;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    div{
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+
+        button{
+            font-size: 1.6rem;
+            width: 12rem;
+            background-color: transparent;
+            border-radius: 100px;
+            padding: 1rem;
+            cursor: pointer;
+
+            color: $colorWhite;
+            border: 2px solid $colorWhite;
+        }
+
+        .no1, .no2, .no3, .no4, .no5{
+            visibility: hidden;
+            color: $colorRed;
+            border: 2px solid $colorRed;
+        }
+    }
+}
+
+.show{
+    visibility: visible !important;
+}
